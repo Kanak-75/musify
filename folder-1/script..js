@@ -3,10 +3,10 @@ const musicFrame = document.getElementById("music-frame");
 
 // Mood-to-Music Mapping (Corrected Embed Links)
 const moodMusic = {
-    happy: "https://www.youtube.com/embed/BWczaSneA0Q",  
-    sad: "https://www.youtube.com/embed/KtlgYxa6BMU",   
-    energetic: "https://www.youtube.com/embed/739A3tJnq8g", 
-    calm: "https://www.youtube.com/embed/41IaR01vEb0"
+    happy: "",  
+    sad: "",   
+    energetic: "", 
+    calm: ""
 };
 
 moodButtons.forEach(button => {
