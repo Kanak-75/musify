@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Simple Music Player</title>
-<!-- Load FontAwesome icons -->
-<link rel="stylesheet"
-		href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
-<!-- Load the custom CSS style file -->
-<link rel="stylesheet" type="text/css" href="s.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Music Player</title>
+    <link rel="stylesheet" href="s.css">
 </head>
 <body>
-<div class="player">
 
-	<!-- Define the section for displaying details -->
-	<div class="details">
-	<div class="now-playing">PLAYING x OF y</div>
-	<div class="track-art"></div>
-	<div class="track-name">Track Name</div>
-	<div class="track-artist">Track Artist</div>
-	</div>
+    <header>
+        <h1>🎵 Music for Your Current Mood 🎵</h1>
+        <p>Select the perfect soundtrack that matches your mood.</p>
+    </header>
 
-	<!-- Define the section for displaying track buttons -->
-	<div class="buttons">
-	<div class="prev-track" onclick="prevTrack()">
-		<i class="fa fa-step-backward fa-2x"></i>
-	</div>
-	<div class="playpause-track" onclick="playpauseTrack()">
-		<i class="fa fa-play-circle fa-5x"></i>
-	</div>
-	<div class="next-track" onclick="nextTrack()">
-		<i class="fa fa-step-forward fa-2x"></i>
-	</div>
-	</div>
+    <!-- Image Positioned Above the Mood Player -->
+    <div class="image-container">
+        <img src="https://i.pinimg.com/736x/25/f2/e9/25f2e9402a5cae5324629aa9a8c349ec.jpg" alt="Music Player Image">
+    </div>
 
-	<!-- Define the section for displaying the seek slider-->
-	<div class="slider_container">
-	<div class="current-time">00:00</div>
-	<input type="range" min="1" max="100"
-		value="0" class="seek_slider" onchange="seekTo()">
-	<div class="total-duration">00:00</div>
-	</div>
+    <section class="music-container">
+        <div class="music-player">
+            <h2>Mood-Based Music Player</h2>
+            <p>Select your mood and enjoy the music!</p>
+            <div class="mood-buttons">
+                <button class="mood-btn" data-mood="happy">😊 Happy</button>
+                <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                <button class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+                <button class="mood-btn" data-mood="calm">🌿 Calm</button>
+            </div>
+            <iframe id="music-frame" src="" frameborder="0" allow="autoplay"></iframe>
+        </div>
+    </section>
 
-	<!-- Define the section for displaying the volume slider-->
-	<div class="slider_container">
-	<i class="fa fa-volume-down"></i>
-	<input type="range" min="1" max="100"
-		value="99" class="volume_slider" onchange="setVolume()">
-	<i class="fa fa-volume-up"></i>
-	</div>
-</div>
+    <footer>
+        <h3>More like this...</h3>
+        <div class="related-content">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+    </footer>
 
-<!-- Load the main script for the player -->
-<script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
