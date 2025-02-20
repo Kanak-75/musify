@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behaviour: smooth;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+}
+#name h1{
+    color: pink;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 15px;
+    font-weight: bold;
+    color: white;
+}
+.navbar ul li a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: pink;
+}
+#sign button{
+    font-size: 20px;
+    padding: 10px;
+    padding: 10px 20px;
+    /* background-image: linear-gradient(to right, rgb(65, 65, 187), pink); */
+    background-color: lightpink;
+}
+#sign button:hover{
+    background-color: rgb(248, 143, 158);
+}
+.bg{
+    width: auto;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    background-image: url("Hackathon.png");
+        background-repeat: no-repeat;
+        transition: opacity 0.3s ease-in-out; /* Smooth effect */
+        opacity: 1; /* Fully visible on hover */
+    }
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        max-width: 1200px;
+        margin: auto;
+        min-height: 80vh;
+        position: relative;
+    }
+    /* background-size: contain; */
+    
+    
+    .text-content {
+        width: 50%;
+        text-align: left;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        position: absolute;
+        left: 5%;  /* Adjust as needed */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .text-content h3 {
+        font-size: 14px;
+        color: gray;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .text-content h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #222;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        ;
+    }
+    
+    .text-content p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+        max-width: 500px;
+    }
+    .image-content {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .image-content img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 50%;
+    }
+
+section > div {
+    display: inline-block;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+  
+    overflow: hidden;
+}
+.tagline_1{
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.tagline{
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 10%;
+    font-size: 70px;
+    word-spacing: -18px;
+}
+section > div {
+    display: inline-block;
+    text-align: left;
+    height: 55px;
+    line-height: 50px;
+    overflow: hidden;
+  }  
+  
+  /* solution */
+  div.word-list span {
+    display: block;
+    color: white
+  }
+  div.word-list {
+      position: relative;
+      animation: cycle ease 5s infinite;
+    }
+    
+    @keyframes cycle {
+      0% { top: 0; }
+      25% { top: 0; }
+      35% { top: -60px; }
+      65% { top: -60px; }
+      75% { top: 0; }
+      100% { top: 0; }
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        background: #121212; /* Dark Theme */
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Container */
+    .container {
+        width: 875px; 
+        max-width: 90%; 
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #1db954, #191414); 
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .container:hover {
+        transform: scale(1.02);
+    }
+    
+    /* Header */
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        opacity: 0.9; 
+    }
+    
+    /* Mood Buttons */
+    .mood-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .mood-btn {
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        color: white;
+        border: none;
+        padding: 14px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(255, 65, 108, 0.5);
+    }
+    
+    .mood-btn:hover {
+        transform: scale(1.1);
+        background: linear-gradient(135deg, #ff4b2b, #ff416c);
+        box-shadow: 0 6px 15px rgba(255, 65, 108, 0.7); 
+    }
+    
+    /* Music Player */
+    .player {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+    
+    iframe {
+        width: 100%;
+        height: 250px; 
+        border-radius: 12px;
+        display: none;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    iframe {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.related-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.placeholder {
+    width: 100%;
+    height: 100px;
+    background: #2a2a2a;
+    border-radius: 8px;
+}
+.credit{
+    height: 20px;
+    width: auto;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(65, 62, 62);
+}
